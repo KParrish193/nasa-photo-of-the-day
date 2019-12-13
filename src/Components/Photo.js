@@ -13,15 +13,15 @@ const Photo = props => {
       <div>
         <Card className="photo-card">
         <CardBody>
+          <CardImg src={props.image} alt="space"/>
           <Button id="Popover1" type="button">
             Details
-          </Button><CardText>Date: {props.date} Photo Credit: {props.photog}</CardText>
-          <CardImg src={props.image} alt="space"/>
+          </Button>
           </CardBody>
         </Card>
       </div>
       <div>
-        <UncontrolledPopover trigger="click" placement="bottom"  target="Popover1" isOpen={popoverOpen} toggle={toggle}>
+        <UncontrolledPopover trigger="click" placement="right"  target="Popover1" isOpen={popoverOpen} toggle={toggle}>
             <PopoverHeader>
               {props.title}
             </PopoverHeader>

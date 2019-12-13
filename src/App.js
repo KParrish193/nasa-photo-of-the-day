@@ -3,8 +3,7 @@ import Photo from "./Components/Photo";
 import axios from "axios";
 import "./App.css";
 
-import {Button, InputGroup, InputGroupAddon, Input} from 'reactstrap';
-
+import {Button} from 'reactstrap';
 
 function App(){
 
